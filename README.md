@@ -7,7 +7,7 @@ This package provides Faspay SendMe 1.0 support for the JAVA Language.
 
 The following versions of JAVA JDK are supported.
 
-* JDK 1.8 or latest
+* JDK 1.8
 
 To use this package, it will be necessary to have a credential. These are referred to as 
 * virtual_account
