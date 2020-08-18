@@ -1,8 +1,6 @@
 [![N|Solid](https://faspay.co.id/docs/sendme/images/sendMe-new.png)](https://faspay.co.id/docs/index-sendme.html#faspay-sendme) 
 ## Welcome To Faspay SendMe
 
-[![Version 1.1 Badge][version-badge]][changelog]
-
 This package provides Faspay SendMe 1.1 support for the JAVA Language.
 
 ## Requirements
@@ -119,9 +117,9 @@ The `Faspay SendMe` provide has the following [method]:
 - 'mutasi()' to use get your transaction history
 - 'inquiry_status()' to use check the latest status transfer
 
-#### FAQ
+## FAQ
 
-## 1. If you get error "Java Security: Illegal key size or default parameters"
+#### 1. If you get error "Java Security: Illegal key size or default parameters"
 
 please refer to : 
 - https://stackoverflow.com/questions/6481627/java-security-illegal-key-size-or-default-parameters/23255246
