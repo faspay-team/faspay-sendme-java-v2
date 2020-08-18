@@ -1,7 +1,9 @@
 [![N|Solid](https://faspay.co.id/docs/sendme/images/sendMe-new.png)](https://faspay.co.id/docs/index-sendme.html#faspay-sendme) 
 ## Welcome To Faspay SendMe
 
-This package provides Faspay SendMe 1.0 support for the JAVA Language.
+[![Version 1.1 Badge][version-badge]][changelog]
+
+This package provides Faspay SendMe 1.1 support for the JAVA Language.
 
 ## Requirements
 
@@ -19,34 +21,31 @@ To use this package, it will be necessary to have a credential. These are referr
 * client_secret
 * iv
 
-in the SendMe.CredentialData.Credential.class by your email from faspay.
-
+Added new file SendmeConfig.properties (get file from dir "src") to root directory project for setting host and credential or 
+Existing in the SendMe.CredentialData.Credential.class. 
+credential will sent to your email from faspay.
 Please contact Administrator Faspay to create the required credentials.
 
 ## Installation
 
 To install:
 
-Import SendMeAPI.jar to use the functions
+Import SendMeLib.jar to use the functions, sample use netbeans
 
 ```sh
-1. right click on java project
-2. choose import
-3. choose archive file
-4. browse SendMeAPI.jar
-5. finish
+1. right click on java project -> Library
+2. Add JAR/Folder
+3. browse SendMeLib.jar
+4. finish
 ```
 
 Import 2 libraries for Java, to use JSON
 
 ```sh
-1. right click on java project
-2. choose build path
-3. choose configure build path
-4. move to Libraries tab
-5. add external JARs
-6. choose json.jar and commons-lang3-3.8.1.jar
-7. apply and close
+1. right click on java project -> Library
+2. Add JAR/Folder
+3. browse commons-lang3-3.8.1.jar & json.jar
+4. finish
 ```
 
 ## Usage
@@ -58,6 +57,7 @@ Import SendMeAPI.jar Class Library And HashMap Class Library
 Ex:
 ```java
     import SendMe.Services;
+	import org.json.JSONObject;
 	import java.util.HashMap;
 ```
 
@@ -87,6 +87,7 @@ Import SendMeAPI.jar Class Library And HashMap Class Library
 Ex:
 ```java
     import SendMe.Services;
+	import org.json.JSONObject;
 	import java.util.HashMap;
 ```
 
@@ -117,3 +118,11 @@ The `Faspay SendMe` provide has the following [method]:
 - 'inquiry_name()' to use check your customer bank account detail
 - 'mutasi()' to use get your transaction history
 - 'inquiry_status()' to use check the latest status transfer
+
+#### FAQ
+
+## 1. If you get error "Java Security: Illegal key size or default parameters"
+
+please refer to : 
+- https://stackoverflow.com/questions/6481627/java-security-illegal-key-size-or-default-parameters/23255246
+- https://github.com/EliteAndroidApps/WhatsApp-Crypt12-Decrypter/issues/3
