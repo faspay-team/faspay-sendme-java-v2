@@ -21,7 +21,8 @@ To use this package, it will be necessary to have a credential. These are referr
 
 Added new file SendmeConfig.properties (get file from dir "src") to root directory project for setting host and credential or 
 Existing in the SendMe.CredentialData.Credential.class. 
-credential will sent to your email from faspay.
+
+Credential will sent to your email from faspay.
 Please contact Administrator Faspay to create the required credentials.
 
 ## Installation
