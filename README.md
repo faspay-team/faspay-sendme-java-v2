@@ -110,13 +110,13 @@ serv.toProduction();
 
 The `Faspay SendMe` provide has the following [method]:
 
-- 'register()' to use register your customer bank account
-- 'confirm()' to use confirm your customer bank account after register method
-- 'transfer()' to use transfer balance to customer bank account registered
-- 'balance_inquiry()' to use check your balance 
-- 'inquiry_name()' to use check your customer bank account detail
-- 'mutasi()' to use get your transaction history
-- 'inquiry_status()' to use check the latest status transfer
+- 'Register()' to use register your customer bank account
+- 'RegisterConfirm()' to use confirm your customer bank account after register method
+- 'Transfer()' to use transfer balance to customer bank account registered
+- 'BalanceInquiry()' to use check your balance 
+- 'InquiryName()' to use check your customer bank account detail
+- 'Mutasi()' to use get your transaction history
+- 'InquiryStatus()' to use check the latest status transfer
 
 ## FAQ
 
