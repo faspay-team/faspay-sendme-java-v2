@@ -20,7 +20,7 @@ To use this package, it will be necessary to have a credential. These are referr
 * iv
 
 Added new file SendmeConfig.properties (get file from dir "src") to root directory project for setting host and credential or 
-Existing in the SendMe.CredentialData.Credential.class. 
+old library in the SendMe.CredentialData.Credential.class. 
 
 Credential will sent to your email from faspay.
 Please contact Administrator Faspay to create the required credentials.
@@ -32,7 +32,7 @@ To install:
 Import SendMeLib.jar to use the functions, sample use netbeans
 
 ```sh
-1. right click on java project -> Library
+1. Navigate to java project -> Library
 2. Add JAR/Folder
 3. browse SendMeLib.jar
 4. finish
@@ -41,7 +41,7 @@ Import SendMeLib.jar to use the functions, sample use netbeans
 Import 2 libraries for Java, to use JSON
 
 ```sh
-1. right click on java project -> Library
+1. Navigate to java project -> Library
 2. Add JAR/Folder
 3. browse commons-lang3-3.8.1.jar & json.jar
 4. finish
@@ -92,6 +92,8 @@ Ex:
 
 Second Step
 ```java
+	Services serv = new Services();
+	
 	HashMap<String, String> array = new HashMap<String, String>();
 	array.put("virtual_account", "9920017573");
 	String rsp = serv.BalanceInquiry(array);
@@ -108,7 +110,7 @@ serv.toProduction();
 
 #### Available Methods
 
-The `Faspay SendMe` provide has the following [method]:
+The `Faspay SendMe` provide has the following [method](https://faspay.co.id/docs/index-en-sendme.html#api-services):
 
 - 'Register()' to use register your customer bank account
 - 'RegisterConfirm()' to use confirm your customer bank account after register method
@@ -123,5 +125,5 @@ The `Faspay SendMe` provide has the following [method]:
 #### 1. If you get error "Java Security: Illegal key size or default parameters"
 
 please refer to : 
-- https://stackoverflow.com/questions/6481627/java-security-illegal-key-size-or-default-parameters/23255246
-- https://github.com/EliteAndroidApps/WhatsApp-Crypt12-Decrypter/issues/3
+- [Stackoverflow](https://stackoverflow.com/questions/6481627/java-security-illegal-key-size-or-default-parameters/23255246)
+- [Github](https://github.com/EliteAndroidApps/WhatsApp-Crypt12-Decrypter/issues/3)
